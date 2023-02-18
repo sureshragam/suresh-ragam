@@ -156,3 +156,35 @@ h4 {
 .images:hover .profile {
     left: 45%;
 }
+.icon{
+    color:white;
+    font-size:30px;
+    margin-right:10px
+}
+.twitter .facebook .instagram .github .linkedin{
+    transition-property:font-size;
+    transition-delay:0.2s;
+    transition-duration:0.2s;
+    transition-timing-function:ease-in
+}
+.twitter:hover{
+    font-size:35px;
+    color:#f9004d;
+}
+.facebook:hover{
+    color:#f9004d;
+    font-size:35px;
+}
+.instagram:hover{
+    color:#f9004d;
+    font-size:35px;
+}
+.github:hover{
+    color:#f9004d;
+    font-size:35px;
+}
+.linkedin:hover{
+    color:#f9004d;
+    font-size:35px;
+
+}
