@@ -12,6 +12,7 @@
     background-color: black;
     color: white;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -119,7 +120,7 @@ nav ul li a:hover {
 @media all and (max-width:576px){
     .content{
         position:absolute;
-        top:50%
+        top:45%
     }
 }
 h1 {
@@ -129,7 +130,7 @@ h1 {
 }
 @media all and (max-width:576px){
     h1{
-        font-size:50px;
+        font-size:30px;
     }
 }
 
@@ -140,10 +141,9 @@ h3 {
 }
 @media all and (max-width:576px){
     h3{
-        font-size:20px;
+        font-size:18px;
     }
 }
-
 h4 {
     color: #fcfc;
     letter-spacing: 2px;
@@ -151,11 +151,9 @@ h4 {
 }
 @media all and (max-width:576px){
     h4{
-        font-size:19px;
+        font-size:15px;
     }
 }
-
-
 
 .images {
     width: 30%;
@@ -167,10 +165,10 @@ h4 {
 }
 @media all and (max-width:576px){
     .images{
-
+        display:none
     }
-}
 
+}
 .images img {
     height: 100%;
     position: absolute;
@@ -179,15 +177,9 @@ h4 {
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
 }
-@media all and (max-width:576px){
-    .images img{
-        height:50%;
-        bottom:0;
-    }
-}
 
-.images .img1 {
-    height: 80%;
+.images .profile {
+    height: 70%;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -195,20 +187,12 @@ h4 {
     transition: bottom 1s, left 1s;
 }
 
-.shape{
-    display:block;
-}
 
-@media all and (max-width:576px){
-    .images .shape{
-        display:none
-    }
-}
 .images:hover .shape {
     bottom: 20px;
 }
 
-.images:hover .profile {
+.images:hover .profile{
     left: 45%;
 }
 .icon{
