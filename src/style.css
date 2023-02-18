@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', 'sans-serif';
 }
-
 .hero {
     position: relative;
     height: 100vh;
@@ -14,31 +12,69 @@
     background-color: black;
     color: white;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 35px;
+    padding-top: 25px;
     padding-left: 10px;
-    padding-right: 10px;
-}
+    padding-right: 20px;
 
+}
 .logo {
     color: white;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
-
 span {
     color: #f9004d;
 }
-
 nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
+}
+.hamburger-icon{
+    display:none;
+}
+@media screen and (max-width:576px){
+    .hamburger-icon{
+        font-size:30px;
+        color:white;
+        display:block
+    }
+    .hamburger-container{
+        display:hide;
+    }
+}
+.hamburger-container{
+    background-color:transparent;
+    padding:15px;
+    text-decoration:none;
+    font-size:20px;
+    line-height:29px;
+}
+.hamburger-container-hide{
+    display:none
+}
+
+div ul{
+    list-style:none;
+}
+div ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+div ul li a:hover{
+ color:#f9004d;
+}
+
+@media all and (max-width:576px){
+    nav ul{
+        display:none
+    }
 }
 
 nav ul li a {
@@ -64,6 +100,11 @@ nav ul li a:hover {
     transition: transform .4s;
     margin-right: 10px
 }
+@media all and (max-width:576px){
+    .btn{
+        display:none
+    }
+}
 
 .btn:hover {
     transform: scale(1.2);
@@ -75,11 +116,21 @@ nav ul li a:hover {
     left: 5%;
     transform: translateY(-50%);
 }
-
+@media all and (max-width:576px){
+    .content{
+        position:absolute;
+        top:50%
+    }
+}
 h1 {
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
+}
+@media all and (max-width:576px){
+    h1{
+        font-size:50px;
+    }
 }
 
 h3 {
@@ -87,41 +138,24 @@ h3 {
     font-size: 25px;
     margin-bottom: 50px;
 }
+@media all and (max-width:576px){
+    h3{
+        font-size:20px;
+    }
+}
 
 h4 {
     color: #fcfc;
     letter-spacing: 2px;
     font-size: 20px;
 }
-
-.newsletter form {
-    width: 380px;
-    max-width: 100%;
-    position: relative;
+@media all and (max-width:576px){
+    h4{
+        font-size:19px;
+    }
 }
 
-.newsletter form input:first-child {
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px;
-}
 
-.newsletter form input:last-child {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0 0 5px #000, 0 0 15px #858585;
-    top: 6px;
-    right: 6px;
-}
 
 .images {
     width: 30%;
@@ -129,6 +163,12 @@ h4 {
     position: absolute;
     bottom: 0;
     right: 100px;
+    display:block;
+}
+@media all and (max-width:576px){
+    .images{
+
+    }
 }
 
 .images img {
@@ -138,6 +178,12 @@ h4 {
     bottom: 0;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
+}
+@media all and (max-width:576px){
+    .images img{
+        height:50%;
+        bottom:0;
+    }
 }
 
 .images .img1 {
@@ -149,6 +195,15 @@ h4 {
     transition: bottom 1s, left 1s;
 }
 
+.shape{
+    display:block;
+}
+
+@media all and (max-width:576px){
+    .images .shape{
+        display:none
+    }
+}
 .images:hover .shape {
     bottom: 20px;
 }
@@ -159,7 +214,7 @@ h4 {
 .icon{
     color:white;
     font-size:30px;
-    margin-right:10px
+    margin-right:25px
 }
 .twitter .facebook .instagram .github .linkedin{
     transition-property:font-size;
