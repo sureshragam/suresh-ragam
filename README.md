@@ -19,7 +19,7 @@ Welcome to my **Personal Portfolio Website** repository! This project showcases 
 
 | Desktop View        | Mobile View         |
 |---------------------|---------------------|
-| ![Desktop View](./public/images/screenshot-desktop.png) | ![Mobile View](./public/images/screenshot-mobile.png) |
+| ![Desktop View](./src/public/images/screenshot-desktop.png) | ![Mobile View](./src/public/images/screenshot-mobile.png) |
 
 ---
 
@@ -30,39 +30,52 @@ Follow these steps to set up and run the project locally.
 ### 1. Clone the Repository
 Clone this repository to your local machine using the following command:
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
-2. Navigate to the Directory
+git clone https://github.com/sureshragam/suresh-ragam.git
+```
+### 2. Navigate to the Directory
 Move into the project directory:
-cd yourrepository
-3. Open in Browser
+```bash
+cd suresh-ragam
+```
+### 3. Open in Browser
 Open the index.html file in your preferred browser to view the website:
 
 On Windows: Right-click index.html → Open with → Your browser (e.g., Chrome).
 On Mac: Drag index.html onto your browser icon.
 
-📂 Folder Structure
-.github/workflows
-|-- static.yml       # GitHub Actions workflow file
+## 📂 Folder Structure
+```bash
+.github/workflows/
+├── static.yml           # GitHub Actions workflow for deployment
 public/
-|-- images/          # Images used in the website
-src/                 # JavaScript source files
-|-- scripts.js       # Main JavaScript file
-index.html           # Main HTML file
-style.css            # Stylesheet for the website
-README.md            # Documentation file
-🌐 Live Demo
-Check out the live version of the website here: Portfolio Website
+├── images/              # Contains images used in the portfolio
+src/
+├── index.html           # Main HTML file for the website
+├── scripts.js           # JavaScript functionality
+├── style.css            # Custom CSS styling
+README.md                # This readme file
+```
 
-🛠️ Built With
-HTML: Structure of the website
-CSS: Styling and layout
-JavaScript: Dynamic functionality and interactions
-📝 License
+## 🌐 Live Demo
+Check out the live version of the website here: https://sureshragam.github.io/suresh-ragam/
+
+## 🛠️ Built With
+- HTML: Structure of the website
+- CSS: Styling and layout
+- JavaScript: Dynamic functionality and interactions
+
+## ⚙️ Deployment on GitHub Pages
+This portfolio is automatically deployed using GitHub Actions.
+
+- Workflow File: .github/workflows/static.yml
+- Deployment Branch: gh-pages
+- Source Files: index.html, style.css, scripts.js
+- To deploy, push your changes to the main branch. GitHub Actions will handle the deployment process.
+
+## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-📧 Contact
+## 📧 Contact
 Feel free to reach out to me via:
 
-Email: your-email@example.com
-Twitter: @yourusername
-LinkedIn: yourname
+Email: suresh.ragam@icloud.com
