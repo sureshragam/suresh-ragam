@@ -1,6 +1,6 @@
 # 🚀 Personal Portfolio Website
 
-Welcome to my **Personal Portfolio Website** repository! This project showcases my skills, certifications, and work as a Fullstack Web Developer. It is designed with HTML, CSS, and JavaScript for a seamless and visually appealing user experience.
+Welcome to my Personal Portfolio Website repository! This project showcases my skills, certifications, and work as a Full-Stack Web Developer. It is designed with HTML, CSS, and JavaScript for a seamless and visually appealing user experience.
 
 ---
 
@@ -68,9 +68,8 @@ Check out the live version of the website here: https://sureshragam.github.io/su
 This portfolio is automatically deployed using GitHub Actions.
 
 - Workflow File: .github/workflows/static.yml
-- Deployment Branch: gh-pages
+- Deployment Branch: main
 - Source Files: index.html, style.css, scripts.js
-- To deploy, push your changes to the main branch. GitHub Actions will handle the deployment process.
 
 ## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for details.
